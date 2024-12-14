@@ -1,8 +1,9 @@
-package io.afalabarce.template.kmm.data.datasources.core.db
+package io.jecsdev.lacalle809nyc.kmm.data.datasources.core.db
 
 import android.content.Context
 import app.cash.sqldelight.db.SqlDriver
 import app.cash.sqldelight.driver.android.AndroidSqliteDriver
+import io.jecsdev.lacalle809nyc.kmm.data.datasources.core.db.KmmDatabase
 import org.koin.java.KoinJavaComponent.inject
 
 actual class DriverFactory {

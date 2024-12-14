@@ -1,4 +1,4 @@
-package io.afalabarce.template.kmm.data.datasources.core.features.preferences
+package io.jecsdev.lacalle809nyc.kmm.data.datasources.core.features.preferences
 
 import android.content.Context
 import androidx.datastore.core.DataStore

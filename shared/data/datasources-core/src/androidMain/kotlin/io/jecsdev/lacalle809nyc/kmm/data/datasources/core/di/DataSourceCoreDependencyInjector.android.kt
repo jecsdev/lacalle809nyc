@@ -1,6 +1,6 @@
-package io.afalabarce.template.kmm.data.datasources.core.di
+package io.jecsdev.lacalle809nyc.kmm.data.datasources.core.di
 
-import io.afalabarce.template.kmm.data.datasources.core.features.preferences.dataStore
+import io.jecsdev.lacalle809nyc.kmm.data.datasources.core.features.preferences.dataStore
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.Module
 import org.koin.core.module.dsl.singleOf

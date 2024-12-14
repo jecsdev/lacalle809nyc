@@ -1,7 +1,7 @@
-package io.afalabarce.template.kmm
+package io.jecsdev.lacalle809nyc.kmm
 
 import android.app.Application
-import io.afalabarce.template.kmm.presentation.ui.di.PresentationUiDependencyInjector
+import io.jecsdev.lacalle809nyc.kmm.presentation.ui.di.PresentationUiDependencyInjector
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.GlobalContext.startKoin
 

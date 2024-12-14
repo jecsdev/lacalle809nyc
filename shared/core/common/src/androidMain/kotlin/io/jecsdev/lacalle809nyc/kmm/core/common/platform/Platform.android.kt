@@ -1,8 +1,9 @@
-package io.afalabarce.template.kmm.core.common.platform
+package io.jecsdev.lacalle809nyc.kmm.core.common.platform
 
 import android.os.Build
-import io.afalabarce.template.kmm.core.common.platform.entities.PlatformData
-import io.afalabarce.template.kmm.core.common.platform.enums.PlatformType
+import io.jecsdev.lacalle809nyc.kmm.core.common.platform.entities.PlatformData
+import io.jecsdev.lacalle809nyc.kmm.core.common.platform.enums.PlatformType
+
 
 class AndroidPlatform : Platform {
     override val platformData: PlatformData

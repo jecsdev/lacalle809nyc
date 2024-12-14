@@ -1,4 +1,4 @@
-package io.afalabarce.template.kmm.core.common.extensions
+package io.jecsdev.lacalle809nyc.kmm.core.common.extensions
 
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.LocalDateTime

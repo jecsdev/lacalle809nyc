@@ -1,6 +1,6 @@
-package io.afalabarce.template.kmm.presentation.viewmodels.di
+package com.jecsdev.lacalle809nyc.kmm.presentation.viewmodels.di
 
-import io.afalabarce.template.kmm.core.common.di.KoinModuleLoader
+import io.jecsdev.lacalle809nyc.kmm.core.common.di.KoinModuleLoader
 import org.koin.core.module.Module
 
 object PresentationViewModelsDependencyInjector : KoinModuleLoader {

@@ -1,4 +1,4 @@
-package io.afalabarce.template.kmm
+package io.jecsdev.lacalle809nyc.kmm
 
 import android.app.Activity
 import android.os.Bundle
@@ -10,7 +10,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
-import io.afalabarce.template.kmm.presentation.ui.App
+import io.jecsdev.lacalle809nyc.kmm.presentation.ui.App
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

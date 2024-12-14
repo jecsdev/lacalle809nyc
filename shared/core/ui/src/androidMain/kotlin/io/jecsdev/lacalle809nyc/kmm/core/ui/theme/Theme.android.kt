@@ -1,4 +1,4 @@
-package io.afalabarce.template.kmm.core.ui.theme
+package io.jecsdev.lacalle809nyc.kmm.core.ui.theme
 
 import android.app.Activity
 import android.graphics.Color
