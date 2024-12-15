@@ -2,7 +2,7 @@ import org.gradle.api.JavaVersion
 
 object BuildVersion {
     object environment {
-        const val applicationId = "io.jecsdev.lacalle809nyc.kmm"
+        const val applicationId = "com.jecsdev.lacalle809nyc.kmm"
         const val appName = "KMM Template"
         const val appVersion = 100
         const val appVersionCode = "1.0.0"
@@ -12,7 +12,7 @@ object BuildVersion {
     }
 
     object android {
-        const val minSdk = 24
+        const val minSdk = 26
         const val compileSdk = 35
     }
 }

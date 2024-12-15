@@ -1,4 +1,4 @@
-package io.afalabarce.template.kmm.presentation.viewmodels
+package com.jecsdev.lacalle809nyc.kmm.presentation.viewmodels
 
 import kotlin.test.Test
 import kotlin.test.assertTrue
