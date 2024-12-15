@@ -121,7 +121,7 @@ abstract class ProjectInitializeTask : DefaultTask() {
                             oldValue = "BUNDLE_VERSION_STRING=1.0.0",
                             newValue = "BUNDLE_VERSION_STRING=${BuildVersion.environment.appVersionCode}"
                         ).replace(
-                            oldValue = "BUNDLE_VERSION=100",
+                            oldValue = "BUNDLE_VERSION=1",
                             newValue = "BUNDLE_VERSION=${BuildVersion.environment.appVersion}"
                         )
                     )

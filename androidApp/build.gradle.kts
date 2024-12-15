@@ -10,6 +10,7 @@ android {
     compileSdk = BuildVersion.android.compileSdk
     defaultConfig {
         minSdk = BuildVersion.android.minSdk
+        targetSdk = BuildVersion.android.targetSdk
         applicationId = BuildVersion.environment.applicationId
         versionCode = BuildVersion.environment.appVersion
         versionName = BuildVersion.environment.appVersionCode

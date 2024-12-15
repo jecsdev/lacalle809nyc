@@ -1,6 +1,6 @@
 @file:Incubating
 
-rootProject.name = "KMMTemplate"
+rootProject.name = "La-calle-809-NYC"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
