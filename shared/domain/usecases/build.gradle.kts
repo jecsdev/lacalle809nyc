@@ -68,8 +68,3 @@ android {
 task("testClasses").doLast {
     println("This is a dummy testClasses task")
 }
-
-buildConfig {
-// BuildConfig configuration here.
-// https://github.com/gmazzo/gradle-buildconfig-plugin#usage-in-kts
-}
