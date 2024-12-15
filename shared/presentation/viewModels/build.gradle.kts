@@ -63,6 +63,14 @@ android {
         sourceCompatibility = BuildVersion.environment.javaVersion
         targetCompatibility = BuildVersion.environment.javaVersion
     }
+    buildTypes {
+        getByName("debug") {
+            isMinifyEnabled = false
+        }
+        getByName("release") {
+            isMinifyEnabled = false
+        }
+    }
 }
 
 tasks.register("testClasses") {
