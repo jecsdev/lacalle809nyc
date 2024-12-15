@@ -24,9 +24,22 @@ android {
         }
     }
     buildTypes {
-        getByName("release") {
+        getByName("debug") {
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-DEBUG"
+            isDebuggable = true
             isMinifyEnabled = false
         }
+
+        getByName("release") {
+            isMinifyEnabled = true
+            isDebuggable = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+
     }
     compileOptions {
         sourceCompatibility = BuildVersion.environment.javaVersion
