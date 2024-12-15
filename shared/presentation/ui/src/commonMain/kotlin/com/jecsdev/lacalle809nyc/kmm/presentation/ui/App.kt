@@ -9,12 +9,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import com.jecsdev.lacalle809nyc.kmm.core.ui.theme.AppMaterialTheme
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Preview
 @Composable
 fun App() {
-    MaterialTheme {
+    AppMaterialTheme {
         Surface {
             Column(
                 modifier = Modifier.fillMaxSize(),

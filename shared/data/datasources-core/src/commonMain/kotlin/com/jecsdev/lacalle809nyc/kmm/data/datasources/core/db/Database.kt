@@ -4,7 +4,7 @@ import com.jecsdev.lacalle809nyc.kmm.models.features.example.local.CacheExampleE
 
 
 class Database(databaseFactory: DriverFactory) {
-    private val database = KmmDatabase(databaseFactory.createDriver())
+    private val database = LaCalleDb(databaseFactory.createDriver())
     private val dbQuery = database.kmmDatabaseQueries
 
     internal fun clearDatabase() {

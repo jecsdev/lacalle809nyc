@@ -6,9 +6,9 @@ expect class DriverFactory {
     fun createDriver(): SqlDriver
 }
 
-fun createDatabase(driverFactory: DriverFactory): KmmDatabase {
+fun createDatabase(driverFactory: DriverFactory): LaCalleDb {
     val driver = driverFactory.createDriver()
-    val database = KmmDatabase(driver)
+    val database = LaCalleDb(driver)
 
     // Do more work with the database (see below).
     return database
