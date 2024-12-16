@@ -1,4 +1,4 @@
-package com.jecsdev.lacalle809nyc.kmm.presentation.ui
+package com.jecsdev.lacalle809nyc.shared.presentation.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

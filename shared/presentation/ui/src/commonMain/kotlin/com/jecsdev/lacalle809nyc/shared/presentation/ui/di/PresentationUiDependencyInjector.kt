@@ -1,4 +1,4 @@
-package com.jecsdev.lacalle809nyc.kmm.presentation.ui.di
+package com.jecsdev.lacalle809nyc.shared.presentation.ui.di
 
 import io.jecsdev.lacalle809nyc.kmm.core.common.di.KoinModuleLoader
 import com.jecsdev.lacalle809nyc.kmm.core.di.CoreDiDependencyInjector
