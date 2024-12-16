@@ -1,5 +1,6 @@
 package com.jecsdev.lacalle809nyc.kmm.data.datasources.core.db
 
+import com.jecsdev.lacalle809nyc.data.datasources.core.db.LaCalleDb
 import com.jecsdev.lacalle809nyc.kmm.models.features.example.local.CacheExampleEntity
 
 
