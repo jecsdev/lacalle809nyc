@@ -63,10 +63,6 @@ android {
     }
 }
 
-buildConfig {
-// BuildConfig configuration here.
-// https://github.com/gmazzo/gradle-buildconfig-plugin#usage-in-kts
-}
 
 tasks.register("testClasses") {
     println("Dummy classes")

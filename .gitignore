@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # Gradle files
-.gradle/
 build/
 .kotlin/
 # Local configuration file (sdk path, etc)
@@ -32,8 +30,6 @@ google-services.json
 
 # Android Profiling
 *.hprof
-=======
-<<<<<<< HEAD
 # These are some examples of commonly ignored file patterns.
 # You should customize this list as applicable to your project.
 # Learn more about .gitignore:
@@ -49,18 +45,11 @@ dist/
 # Compiled Python bytecode
 *.py[cod]
 
-# Log files
-*.log
-
 # Package files
 *.jar
 
 # Maven
 target/
-dist/
-
-# JetBrains IDE
-.idea/
 
 # Unit test reports
 TEST*.xml
@@ -84,15 +73,10 @@ Thumbs.db
 *.mov
 *.wmv
 
-=======
-*.iml
-.gradle
 **/build/
 xcuserdata
 !src/**/build/
-local.properties
 .idea
-.DS_Store
 captures
 .externalNativeBuild
 .cxx
@@ -102,5 +86,3 @@ captures
 !*.xcodeproj/project.xcworkspace/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
->>>>>>> d20ac65 (Initial Commit)
->>>>>>> 6d3d316 (Initial commit)

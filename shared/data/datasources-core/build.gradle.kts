@@ -72,11 +72,6 @@ android {
     }
 }
 
-buildConfig {
-// BuildConfig configuration here.
-// https://github.com/gmazzo/gradle-buildconfig-plugin#usage-in-kts
-}
-
 ktorfit {
     errorCheckingMode = ErrorCheckingMode.ERROR
     generateQualifiedTypeName = true
