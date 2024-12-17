@@ -12,6 +12,6 @@ interface ApiService {
     suspend fun putAllItems(@Body items: List<String>)
 
     companion object {
-        const val API_URL = "https://your.own.api"
+        const val SOURCE_URL = "https://app.sonicpanelradio.com/8082/stream"
     }
 }

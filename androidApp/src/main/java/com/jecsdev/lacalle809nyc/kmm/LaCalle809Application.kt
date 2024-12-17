@@ -5,10 +5,10 @@ import com.jecsdev.lacalle809nyc.shared.presentation.ui.di.PresentationUiDepende
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.GlobalContext.startKoin
 
-class CustomApplication : Application() {
+class LaCalle809Application : Application() {
     override fun onCreate() {
         startKoin {
-            androidContext(this@CustomApplication)
+            androidContext(this@LaCalle809Application)
             modules(PresentationUiDependencyInjector.modules)
         }
 

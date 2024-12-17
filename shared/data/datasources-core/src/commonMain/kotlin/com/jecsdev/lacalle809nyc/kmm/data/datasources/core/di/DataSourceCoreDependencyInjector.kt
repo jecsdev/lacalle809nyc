@@ -21,7 +21,7 @@ object DataSourceCoreDependencyInjector : KoinModuleLoader {
                     single<ApiService> {
                         Ktorfit
                             .Builder()
-                            .baseUrl(ApiService.API_URL)
+                            .baseUrl(ApiService.SOURCE_URL)
                             .build()
                             .createApiService()
                     }

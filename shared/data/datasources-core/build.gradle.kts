@@ -35,6 +35,7 @@ kotlin {
             implementation(projects.shared.core.common)
             implementation(projects.shared.data.models)
             implementation(projects.shared.data.datasources)
+            implementation(projects.shared.domain.repository)
 
             implementation(libs.bundles.layer.data.datasources.core)
         }

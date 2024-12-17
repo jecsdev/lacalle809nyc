@@ -32,6 +32,7 @@ kotlin {
             implementation(projects.shared.core.viewmodels)
             implementation(projects.shared.domain.usecases)
             implementation(projects.shared.domain.models)
+            implementation(projects.shared.domain.repository)
             implementation(libs.bundles.layer.core.viewmodels)
         }
 
