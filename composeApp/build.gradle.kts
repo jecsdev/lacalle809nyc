@@ -43,6 +43,7 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.bundles.media3)
+            implementation(libs.bundles.koin)
         }
     }
 }
