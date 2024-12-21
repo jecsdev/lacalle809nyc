@@ -1,5 +1,6 @@
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import java.util.Properties
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -59,6 +60,17 @@ android {
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
+
+        val propertiesFile = File(rootDir, "config.properties")
+        if (propertiesFile.exists()) {
+            val properties = Properties()
+            propertiesFile.inputStream().use { properties.load(it) }
+            buildConfigField("String", "BASE_URL", properties.getProperty("BASE_URL"))
+        } else {
+            throw GradleException("The file doesn't exist.")
+        }
+
+
     }
     packaging {
         resources {
@@ -66,9 +78,25 @@ android {
         }
     }
     buildTypes {
-        getByName("release") {
+        getByName("debug") {
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-DEBUG"
+            isDebuggable = true
             isMinifyEnabled = false
         }
+
+        getByName("release") {
+            isMinifyEnabled = true
+            isDebuggable = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
