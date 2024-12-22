@@ -47,7 +47,8 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.bundles.media3)
             implementation(libs.bundles.koin)
-
+            implementation(libs.androidx.core.ktx)
+            implementation(compose.components.resources)
         }
     }
 }

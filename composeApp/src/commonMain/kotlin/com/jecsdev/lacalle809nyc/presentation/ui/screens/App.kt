@@ -11,6 +11,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.jecsdev.lacalle809nyc.presentation.theme.AppMaterialTheme
+import com.jecsdev.lacalle809nyc.presentation.ui.composables.Logo
+import com.jecsdev.lacalle809nyc.presentation.ui.composables.PlayPauseButton
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
@@ -25,9 +27,11 @@ fun App() {
                 verticalArrangement = Arrangement.Center
             ) {
                 Text(
-                    text = "Hello World",
-                    style = MaterialTheme.typography.displaySmall
+                    text = "La Calle 809 NYC",
+                    style = MaterialTheme.typography.titleLarge
                 )
+                Logo()
+                PlayPauseButton()
             }
         }
     }
