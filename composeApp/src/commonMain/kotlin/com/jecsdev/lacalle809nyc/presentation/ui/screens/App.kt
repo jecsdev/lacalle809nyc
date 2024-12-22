@@ -25,7 +25,6 @@ fun App() {
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-
                 Text(
                     text = "Hello World",
                     style = MaterialTheme.typography.displaySmall

@@ -34,6 +34,7 @@ kotlin {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
             implementation(libs.koin.core.android)
+            implementation(libs.androidx.appcompat)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -46,6 +47,7 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.bundles.media3)
             implementation(libs.bundles.koin)
+
         }
     }
 }
@@ -60,16 +62,10 @@ android {
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
-
-        val propertiesFile = File(rootDir, "config.properties")
-        if (propertiesFile.exists()) {
-            val properties = Properties()
-            propertiesFile.inputStream().use { properties.load(it) }
-            buildConfigField("String", "BASE_URL", properties.getProperty("BASE_URL"))
-        } else {
-            throw GradleException("The file doesn't exist.")
-        }
-
+        
+        val properties = Properties()
+        properties.load(project.rootProject.file("config.properties").inputStream())
+        buildConfigField("String", "BASE_URL", properties.getProperty("BASE_URL"))
 
     }
     packaging {
