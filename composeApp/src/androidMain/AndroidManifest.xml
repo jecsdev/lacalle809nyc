@@ -3,9 +3,9 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
-        android:icon="@drawable/img_5414"
+        android:icon="@drawable/ic_logo_main"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/img_5414"
+        android:roundIcon="@drawable/ic_logo_main"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar"
         android:name=".LaCalle809NYCApplication">
