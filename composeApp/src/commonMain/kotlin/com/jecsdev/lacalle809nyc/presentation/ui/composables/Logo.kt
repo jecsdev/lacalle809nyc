@@ -14,7 +14,7 @@ import org.jetbrains.compose.resources.painterResource
 fun Logo() {
     Image(
         painter = painterResource(Res.drawable.lc809_logo),
-        modifier = Modifier.size(120.dp),
+        modifier = Modifier.size(240.dp),
         contentDescription = null
     )
 }

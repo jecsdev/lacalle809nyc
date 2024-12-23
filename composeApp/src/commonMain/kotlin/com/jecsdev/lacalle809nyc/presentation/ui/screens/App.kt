@@ -13,6 +13,10 @@ import androidx.compose.ui.Modifier
 import com.jecsdev.lacalle809nyc.presentation.theme.AppMaterialTheme
 import com.jecsdev.lacalle809nyc.presentation.ui.composables.Logo
 import com.jecsdev.lacalle809nyc.presentation.ui.composables.PlayPauseButton
+import lacalle809nyc.composeapp.generated.resources.Res
+import lacalle809nyc.composeapp.generated.resources.app_name
+import lacalle809nyc.composeapp.generated.resources.best_music_experience
+import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
@@ -26,12 +30,30 @@ fun App() {
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-                Text(
-                    text = "La Calle 809 NYC",
-                    style = MaterialTheme.typography.titleLarge
-                )
-                Logo()
-                PlayPauseButton()
+                Column(
+                    modifier = Modifier.weight(1f),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Text(
+                        text = stringResource(Res.string.app_name),
+                        style = MaterialTheme.typography.headlineLarge
+                    )
+                    Text(
+                        text = stringResource(Res.string.best_music_experience),
+                        style = MaterialTheme.typography.titleMedium
+                    )
+                    Logo()
+                }
+
+                Column(
+                    modifier = Modifier.weight(1f),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    PlayPauseButton()
+                }
+
             }
         }
     }
