@@ -49,6 +49,7 @@ kotlin {
             implementation(libs.bundles.koin)
             implementation(libs.androidx.core.ktx)
             implementation(compose.components.resources)
+            implementation(compose.materialIconsExtended)
         }
     }
 }

@@ -2,7 +2,9 @@ package com.jecsdev.lacalle809nyc.presentation.ui.composables
 
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -14,7 +16,8 @@ import org.jetbrains.compose.resources.painterResource
 fun Logo() {
     Image(
         painter = painterResource(Res.drawable.lc809_logo),
-        modifier = Modifier.size(240.dp),
+        modifier = Modifier.height(240.dp)
+            .width(360.dp),
         contentDescription = null
     )
 }
