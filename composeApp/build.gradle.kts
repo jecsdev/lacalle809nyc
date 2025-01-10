@@ -1,5 +1,6 @@
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import java.util.Properties
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -32,6 +33,8 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.koin.core.android)
+            implementation(libs.androidx.appcompat)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -43,6 +46,10 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.bundles.media3)
+            implementation(libs.bundles.koin)
+            implementation(libs.androidx.core.ktx)
+            implementation(compose.components.resources)
+            implementation(compose.materialIconsExtended)
         }
     }
 }
@@ -57,6 +64,11 @@ android {
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
+        
+        val properties = Properties()
+        properties.load(project.rootProject.file("config.properties").inputStream())
+        buildConfigField("String", "BASE_URL", properties.getProperty("BASE_URL"))
+
     }
     packaging {
         resources {
@@ -64,9 +76,25 @@ android {
         }
     }
     buildTypes {
-        getByName("release") {
+        getByName("debug") {
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-DEBUG"
+            isDebuggable = true
             isMinifyEnabled = false
         }
+
+        getByName("release") {
+            isMinifyEnabled = true
+            isDebuggable = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
