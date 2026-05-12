@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">La Calle 809 NYC</string>
     <string name="best_music_experience">La mejor experiencia musical.</string>
+    <string name="radio_logo">Logo de emisora</string>
+    <string name="pause">Pausar</string>
+    <string name="play">Reproducir</string>
 </resources>
