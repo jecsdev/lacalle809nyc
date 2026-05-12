@@ -12,6 +12,11 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import lacalle809nyc.composeapp.generated.resources.Res
+import lacalle809nyc.composeapp.generated.resources.pause
+import lacalle809nyc.composeapp.generated.resources.play
+import lacalle809nyc.composeapp.generated.resources.radio_logo
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun PlayPauseButton(
@@ -24,9 +29,10 @@ fun PlayPauseButton(
         colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary),
         onClick = { onClick() }) {
         if (isPlaying) {
-            Icon(imageVector = Icons.Default.Pause, contentDescription = null)
+            Icon(imageVector = Icons.Default.Pause, contentDescription =  stringResource(Res.string.pause))
+
         } else {
-            Icon(imageVector = Icons.Default.PlayArrow, contentDescription = null)
+            Icon(imageVector = Icons.Default.PlayArrow, contentDescription = stringResource(Res.string.play))
         }
 
     }
