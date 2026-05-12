@@ -15,7 +15,7 @@ junit = "4.13.2"
 kotlin = "2.2.10"
 media3 = "1.5.1"
 koin = "4.0.0"
-version-code = "2"
+version-code = "6"
 version-name = "2.0"
 
 [libraries]
