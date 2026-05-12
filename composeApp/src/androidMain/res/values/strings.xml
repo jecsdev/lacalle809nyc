@@ -1,3 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">La Calle 809 NYC</string>
+    <string name="volume_down">Bajar volumen</string>
+    <string name="volume_up">Subir volumen</string>
+    <string name="app_disclaimer">Somos La Calle 809 NYC, la emisora urbana de los Dominicanos en Nueva York.</string>
 </resources>

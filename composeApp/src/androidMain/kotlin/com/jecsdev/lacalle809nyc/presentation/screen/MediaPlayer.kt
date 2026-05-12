@@ -130,6 +130,7 @@ fun MediaPlayer() {
                     )
                     Spacer(modifier = Modifier.height(20.dp))
                     Logo()
+                    Spacer(modifier = Modifier.height(36.dp))
                 }
 
                 Column(

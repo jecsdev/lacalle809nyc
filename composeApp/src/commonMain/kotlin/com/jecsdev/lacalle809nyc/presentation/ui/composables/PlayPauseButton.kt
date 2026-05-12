@@ -15,7 +15,6 @@ import androidx.compose.ui.unit.dp
 import lacalle809nyc.composeapp.generated.resources.Res
 import lacalle809nyc.composeapp.generated.resources.pause
 import lacalle809nyc.composeapp.generated.resources.play
-import lacalle809nyc.composeapp.generated.resources.radio_logo
 import org.jetbrains.compose.resources.stringResource
 
 @Composable
@@ -30,11 +29,9 @@ fun PlayPauseButton(
         onClick = { onClick() }) {
         if (isPlaying) {
             Icon(imageVector = Icons.Default.Pause, contentDescription =  stringResource(Res.string.pause))
-
         } else {
             Icon(imageVector = Icons.Default.PlayArrow, contentDescription = stringResource(Res.string.play))
         }
-
     }
 }
 
