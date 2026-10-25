@@ -4,4 +4,27 @@
     <string name="volume_down">Bajar volumen</string>
     <string name="volume_up">Subir volumen</string>
     <string name="app_disclaimer">Somos La Calle 809 NYC, la emisora urbana de los Dominicanos en Nueva York.</string>
+    <string name="live">EN VIVO</string>
+    <string name="play">Reproducir</string>
+    <string name="pause">Pausar</string>
+    <string name="retry">Reintentar</string>
+    <string name="connecting">Conectando…</string>
+    <string name="playback_error">No se pudo conectar. Toca para reintentar.</string>
+    <string name="listening_live">Escuchando en vivo</string>
+    <string name="tap_to_listen">Toca para escuchar</string>
+    <string name="sleep_timer">Temporizador</string>
+    <string name="timer_remaining">%1$d:%2$02d restantes</string>
+    <string name="timer_minutes">%1$d minutos</string>
+    <string name="timer_one_hour">1 hora</string>
+    <string name="timer_one_hour_half">1 hora y media</string>
+    <string name="timer_two_hours">2 horas</string>
+    <string name="timer_two_hours_half">2 horas y media</string>
+    <string name="timer_three_hours">3 horas</string>
+    <string name="cancel_timer">Cancelar temporizador</string>
+    <string name="close">Cerrar</string>
+    <string name="share">Compartir</string>
+    <string name="share_title">Compartir La Calle 809 NYC</string>
+    <string name="share_message">Escucha La Calle 809 NYC: %1$s</string>
+    <string name="play_store_url">https://play.google.com/store/apps/details?id=com.jecsdev.lacalle809nyc</string>
+    <string name="volume">Volumen</string>
 </resources>
